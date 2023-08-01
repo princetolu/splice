@@ -1,0 +1,639 @@
+body {
+    min-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(img/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+}
+
+header img {
+    float: right;
+}
+
+.nav-left {
+    position: absolute;
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #272727;
+}
+
+.nav-links a:hover {
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-right {
+    position: absolute;
+    right: 40px;
+    padding-top: 30px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn-primary {
+    background: none;
+    margin-left: 8px;
+    color: white;
+}
+
+.btn-secondary {
+    color: white;
+    background: rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(2.5px);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+header .content {
+    margin-top: 150px;
+    margin-left: 100px;
+    float: left;
+}
+
+header .content h1{
+    text-align: left;
+    width: 400px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    background: url(img/Rectangle\ 3.png);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .content p{
+    font-size: 18px;
+    color: #595959;
+    width: 400px;
+    text-align: left;
+    line-height: 30px;
+}
+
+header .content button {
+    background-color: #0033FF;
+    border-radius: 100px;
+    padding: 11px 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    float: left;
+}
+
+
+/* Features */
+.feature {
+    position: absolute;
+    margin-top: 800px;
+    text-align: center;
+}
+
+.feature h2 {
+    color: #606060;
+    text-shadow: 0 10px 15px #000;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.feature ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.feature ul .feature-img {
+    width: 200px;
+    height: 195px;
+}
+
+.feature ul .real {
+    width: 200px;
+    height: 70px;
+}
+
+.feature-img .hover-img {
+    z-index: 99;
+    width: 200px;
+    height: 70px;
+    display: none;
+}
+
+.feature-img:hover .hover-img {
+    display: inline;
+}
+
+.feature-img:hover .real {
+    display: none;
+}
+
+
+
+
+/* Sound */
+.sound{
+    position: absolute;
+    margin-top: 1100px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.sound h2 {
+    color: rgba(96, 96, 96, 0.5);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sound p {
+    font-size: 20px;
+    color: rgba(149, 138, 138, 1);
+    width: 450px;
+    margin: auto;
+    justify-content: center;
+}
+
+.sound button {
+    margin-top: 30px;
+    background-color: #0033FF;
+    border-radius: 100px;
+    padding: 11px 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+.sound img {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.sound .curve {
+    margin-top: -600px;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+
+
+
+
+
+/* Studio */
+.studio {
+    position: absolute;
+    margin-top: 1700px;
+}
+.studio .bg{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+.studio .left {
+    width: 45%;
+    float: left;
+    margin-top: -550px;
+    margin-left: 50px;
+}
+
+.left .circle-wrapper {
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    position:relative;
+    margin-left:50px;
+    border: 2px solid #7E70FF47;
+}
+
+.left .circle {
+    display:block;
+    position:absolute;
+    width:100px;
+    height:100px;
+    left: 50%;
+    margin:-51px;
+
+}
+
+.left .logo1 {
+    transform: translate(0);
+}
+
+.left .logo2 {
+    transform: translateX(220px) translateY(140px);
+}
+
+.left .logo3 {
+    transform: translateX(230px)  translateY(360px);
+}
+
+.left .logo4 {
+    transform:  translateX(0)  translateY(510px);
+}
+
+.left .logo5 {
+    transform:translateX(-220px)  translateY(370px);
+}
+
+.left .logo6 {
+    transform:  translateX(-220px)  translateY(140px);
+}
+
+
+.left .circle-wrapper-2{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    position:absolute;
+    margin-left:120px;
+    background: radial-gradient(50% 50% at 50% 50%, #816FFF 0%, rgba(129, 64, 155, 0) 100%);
+    margin-top: -420px;
+}
+
+.left .circle-wrapper-3{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    position:absolute;
+    margin-left:200px;
+    background: #F4F6F9;
+    margin-top: -350px;
+}
+
+.left .logo7 {
+    transform: translate(0px) translateY(10px);
+}
+
+.left .logo8 {
+    transform: translateX(-90px) translateY(140px);
+}
+
+.left .logo9 {
+    transform: translateX(90px) translateY(140px);
+}
+
+.studio .right {
+    width: 45%;
+    float: right;
+    margin-top: -450px;
+    margin-left: 50px;
+}
+
+.studio .right h3 {
+    color: rgba(96, 96, 96, 0.5);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.studio .right h1 {
+    color: #0C0C0C;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.studio .right p {
+    color: #958A8A;
+    width: 450px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.studio .right button {
+    margin-top: 30px;
+    background-color: #0033FF;
+    border-radius: 100px;
+    padding: 11px 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+
+
+
+/* Sync */
+.sync {
+    position: absolute;
+    margin: 2700px 100px 50px 100px;
+}
+
+.sync .left {
+    width: 45%;
+    float: left;
+    margin-top: 90px;
+}
+
+.sync .left h3 {
+    color: rgba(96, 96, 96, 0.5);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.sync .left h1 {
+    color: #0C0C0C;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sync .left p {
+    color: #958A8A;
+    width: 450px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.sync .left button {
+    margin-top: 30px;
+    background-color: #0033FF;
+    border-radius: 100px;
+    padding: 11px 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+.sync .right {
+    width: 45%;
+    float: right;
+    margin-right: 70px;
+}
+
+.sync .right img {
+    width: 671px;
+    height: 448px;
+}
+
+
+
+
+
+
+/* Creator */
+.creator {
+    position: absolute;
+    background-image: url(img/Vector\ 7.png);
+    background-repeat: no-repeat;
+    margin-top: 3400px;
+    color: white;
+    height: 1400px;
+    width: 100%;
+    border-radius: 0 0 200px 200px;
+}
+
+.creator .saying {
+    padding: 50px 100px 0 50px;
+}
+
+.creator .saying .saying-left {
+    width: 45%;
+    float: left;
+    margin-top: 100px;
+}
+
+.saying-left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.saying-left p {
+    color: #958A8A;
+    width: 420px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.saying-left button {
+    margin-top: 30px;
+    background-color: #0033FF;
+    border-radius: 100px;
+    padding: 11px 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+.creator .saying .saying-right {
+    width: 45%;
+    float: left;
+    position: relative;
+}
+
+.saying-right .card1 {
+    background-color: #202020;
+    width: 270px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.saying-right .card2 {
+    background-color: #202020;
+    width: 270px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin-left: 330px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.saying-right .card3 {
+    background-color: #202020;
+    width: 270px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 250px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.saying-right .card4{
+    background-color: #202020;
+    width: 270px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    margin-top: 250px;
+    margin-left: 360px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.saying-right .map {
+    margin-top: -200px;
+    width: 800px;
+}
+
+.goodSound {
+    margin-top: 900px;
+    text-align: center;
+}
+
+.goodSound h2 {
+    font-size: 48px;
+}
+
+.goodSound .goodSoundCard{
+    justify-content: space-around;
+}
+
+.goodSound .soundCard{
+    width: 300px;
+    text-align: left;
+    display: inline-block;
+    text-align: left;
+}
+
+.goodSound h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.goodSound p {
+    margin-top: 0;
+    color: #958A8A;
+    font-size: 16px;
+    width: 270px;
+}
+
+.goodSound .pattern {
+    margin-top: -1200px;
+    z-index: 1000;
+}
+
+.jobs {
+    position: absolute;
+    margin-top: 4650px;
+    margin-left: 10%;
+    width: 900px;
+    text-align: center;
+    padding: 50px 80px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(95.31deg, #A659FF -28.73%, #7178FF 23.23%, #2148FF 62.74%, #FF3517 111.77%);
+}
+
+.jobs h2 {
+    font-size: 36px;
+    width: 400px;
+    margin: auto;
+}
+
+.jobs button {
+    padding: 11px 35px;
+    background: none;
+    gap: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 105px;
+    color: white;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+
+/* Footer */
+.footer {
+    position: absolute;
+    margin-top: 5000px;
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer .logo {
+    margin-top: 10px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #606060;
+}
+
+.footer h3 {
+    color: #0C0C0C;
+}
+
+.footer .links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer .links li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+  
+.footer .links li a { 
+    font-size: 12px;
+    color: #606060;
+    text-decoration: none;
+}
+
+.footer .links li a:hover { 
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer .social ul {
+    flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer .social .links2 {
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social .links2 a {
+    text-decoration: none;
+    color: #606060;
+}
+
+.footer .social .links2 a:hover {
+    text-decoration: underline;
+    color: #000;
+}
